@@ -1,0 +1,18 @@
+{
+  "name": "rosiel/typed_relation_display_name",
+  "type": "drupal-module",
+  "description": "New field type extends Typed Relation, with a display name subfield.",
+  "keywords": [
+    "Drupal"
+  ],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/rosiel/typed_relation_display_name",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://github.com/rosiel/typed_relation_display_name/issues",
+    "source": "http://github.com/rosiel/typed_relation_display_name"
+  },
+  "require": {
+    "drupal/controlled_access_terms": "^2"
+  }
+}
