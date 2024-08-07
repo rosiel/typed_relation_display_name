@@ -2,7 +2,7 @@
 
 An extension to the Typed Relation field type that provides an optional display name subfield.
 
-![Screenshot of triple-barreled widget](assets/screenshot-widget.png)
+![Screenshot of triple-barreled widget](assets/screenshot-form-widget.png)
 
 ## Requirements
 
