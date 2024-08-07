@@ -1,0 +1,6 @@
+typed_relation_display_name:
+  label: 'Typed Relation with Display name'
+  description: 'A Reference field, with a type and an optional display name.'
+  weight: 100
+  libraries:
+    - typed_relation_display_name/typed_relation_display_name.icons

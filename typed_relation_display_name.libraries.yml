@@ -1,0 +1,4 @@
+typed_relation_display_name.icons:
+  css:
+    theme:
+      css/typed_relation_display_name.icons-min.css: {}

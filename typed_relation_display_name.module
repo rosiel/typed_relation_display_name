@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Typed Relation with Display Name field stuff.
+ */
+
+/**
+ * Implements hook_field_info_entity_type_ui_definitions_alter().
+ */
+function typed_relation_display_name_field_info_entity_type_ui_definitions_alter(array &$ui_definitions, string $entity_type_id) {
+  // Put the generic typed relation field last and name it 'Other'.
+  if (isset($ui_definitions['typed_relation_display_name'])) {
+    $ui_definitions['typed_relation']['label'] = t('Other');
+    $ui_definitions['typed_relation']['weight'] = 11;
+  }
+  // Undo some shenanigans done by the Media module to the media option.
+  if (isset($ui_definitions['field_ui:typed_relation_display_name:media'])) {
+    $ui_definitions['field_ui:typed_relation_display_name:media']['category'] = 'typed_relation_display_name';
+    $ui_definitions['field_ui:typed_relation_display_name:media']['description'] = 'A reference field with a configurable type selector.';
+    $ui_definitions['field_ui:typed_relation_display_name:media']['weight'] = 0;
+  }
+  // Put taxonomy term first in the option list.
+  if (isset($ui_definitions['field_ui:typed_relation_display_name:taxonomy_term'])) {
+    $ui_definitions['field_ui:typed_relation_display_name:taxonomy_term']['weight'] = -10;
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function typed_relation_display_name_form_field_ui_field_storage_add_form_alter(&$form, &$form_state, $form_id) {
+  $form['#attached']['library'][] = 'typed_relation_display_name/typed_relation_display_name.icons';
+}

@@ -1,0 +1,7 @@
+name: 'Typed Relation Display Name'
+description: 'A Typed Relation field with an extra display name'
+type: module
+package: Islandora
+core_version_requirement: ^10
+dependencies: 
+  - controlled_access_terms:controlled_access_terms
