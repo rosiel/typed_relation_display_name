@@ -19,3 +19,7 @@ Once installed, a new field type will become available called "Typed Relation wi
 TODO: There is not yet a tool for migrating an existing Typed Relation field into a Typed Relation With Display Name.
 
 TODO: Islandora Workbench compatibility.
+
+## License
+
+[GPLv2](http://www.gnu.org/licenses/gpl-2.0.txt)
