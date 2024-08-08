@@ -16,9 +16,7 @@ Install as usual for Drupal modules.
 
 Once installed, a new field type will become available called "Typed Relation with Display Name". It has its own widget and formatter. 
 
-TODO: There is not yet a tool for migrating an existing Typed Relation field into a Typed Relation With Display Name.
-
-TODO: Islandora Workbench compatibility.
+TODO: Islandora Workbench compatibility is in progress.
 
 ## License
 
