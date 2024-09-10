@@ -35,7 +35,7 @@ class TypedRelationDisplayNameWidget extends TypedRelationWidget {
       '#description' => $this->t("Display name is optional. If it exists, it will be displayed instead of the name of the linked entity."),
       '#type' => 'textfield',
       '#default_value' => $item->display_name ?? '',
-      '#weight' => 2,
+      '#weight' => 10,
     ];
 
     unset($widget['target_id']['#title_display']);
