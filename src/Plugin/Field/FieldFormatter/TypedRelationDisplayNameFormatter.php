@@ -27,8 +27,9 @@ class TypedRelationDisplayNameFormatter extends TypedRelationFormatter {
     foreach ($items as $delta => $item) {
 
       // Rewrite the title of the link to be the display name.
-      if (!is_null($item->get('display_name')->getValue())) {
-        $elements[$delta]['#title'] = $item->get('display_name')->getValue();
+      $display_name = $item->get('display_name')->getValue();
+      if (!is_null($display_name) and strlen($display_name) > 0) {
+        $elements[$delta]['#title'] = $display_name;
       }
     }
 
